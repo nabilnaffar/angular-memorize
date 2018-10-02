@@ -1,0 +1,5 @@
+<i  class="card"
+    [ngClass]="{'flipped': isFlipped, 'unmatched': isMatched === false && isFlipped, 'matched': isMatched === true && isFlipped, 'disabled': isDisabled}" 
+    (click)="clicked($event)">
+    <img width="150px" height="150px" [src]="imgSrc" [alt]="value" />
+</i>
